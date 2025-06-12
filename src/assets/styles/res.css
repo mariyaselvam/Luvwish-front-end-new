@@ -1,0 +1,136 @@
+/* -------------------- Responsive Styles -------------------- */
+
+
+@media (max-width: 400px) {
+  .date-picker-wrapper {
+    width: 100% !important;
+  }
+  .form-control {
+    width: 100% !important;
+  }
+}
+
+
+/* Mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .banner-cont-wrap span {
+    font-size: 24px;
+  }
+
+  .how-it-works-big-tit {
+    font-size: 36px;
+  }
+
+  .why-choose-us-tit-wrap h3,
+  .why-choose-us-tit-wrap p {
+    text-align: center;
+  }
+
+  .nav-options-links-wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .product-listing-card {
+    max-width: 100%;
+  }
+
+  .product-listing-card .card-body {
+    padding: 20px 0px;
+    
+  }
+
+  .Product-Listing-Component-card-img {
+    height: 220px;
+  }
+
+  .customer-feedback-sec-tit-wrap h2 {
+    max-width: 90%;
+    font-size: 20px;
+  }
+
+  .social-meadia-wrap,
+  .footer-email-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-email-wrap input,
+  .footer-mail-sub-btn {
+    width: 100%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    left: 30% !important;
+    right: 30% !important;
+  }
+  
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+   .product-listing-card{
+    width: fit-content;
+   }
+   
+
+   
+
+  .nav-options-links-wrap {
+    gap: 40px;
+  }
+
+  .Why-luvwish-card-tit {
+    font-size: 24px;
+  }
+
+  .how-it-works-big-tit {
+    font-size: 48px;
+  }
+
+  .Product-Listing-Component-card-img {
+    height: 260px;
+  }
+
+  .customer-feedback-card {
+    padding: 20px;
+  }
+}
+
+/* Small laptops (max-width: 992px) */
+@media (max-width: 992px) {
+  .nav-options-links-wrap {
+    gap: 50px;
+  }
+
+  .about-us-sec-tit-wrap {
+    padding: 0 15px;
+  }
+
+  .product-listing-card {
+    max-width: 90%;
+  }
+
+  .Product-Listing-Component-card-img {
+    height: 280px;
+  }
+
+  .customer-feedback-sec-tit-wrap h2 {
+    max-width: 60%;
+  }
+
+  .product-listing-card .card-body{
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 992px){
+    .product-listing-main-sec-iiner-left-card{
+        margin-bottom: 30px;
+    }
+}

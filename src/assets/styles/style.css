@@ -1,0 +1,551 @@
+:root {
+  --primary: #d91374;
+  --secondary: #f9cee4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Montserrat";
+}
+
+.signup-section {
+  background-color: #f8f9fa;
+}
+
+.signup-section .card {
+  border: none;
+}
+
+.nav-main-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-profiles-nd-more-wrap {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-sec {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.nav-sec a {
+  color: var(--primary) !important;
+}
+
+.nav-options-links-wrap {
+  display: flex;
+  gap: 70px;
+}
+
+.
+
+.nav-main-logo {
+  height: 70px;
+  width: 182px;
+  overflow: hidden;
+}
+
+.nav-main-logo a{
+  height: 100%;
+  display: block;
+}
+
+.nav-main-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-sec {
+  background-image: url("../../assets/images/banner/landing-main-img.jpg");
+  padding: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-sec h1 {
+  color: white;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 60px;
+  font-style: normal;
+}
+
+.banner-cont-wrap span {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 40px;
+  font-style: normal;
+  color: var(--primary);
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  border-radius: 30px;
+  padding: 6px 48px;
+  border: none;
+  color: white;
+}
+
+.about-us-sec {
+  padding-bottom: 50px;
+}
+
+.about-us-sec-tit-wrap {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.about-us-sec-tit-wrap * {
+  color: var(--primary);
+}
+
+.Why-luvwish-card {
+  position: relative;
+  transform: rotate(0deg);
+  min-height: 300px;
+  height: auto;
+  display: grid;
+  place-content: center;
+  padding: 20px 30px;
+  background-color: #E94D8B;
+  transition: 0.6s ease;
+  border-radius: 90px;
+  margin-bottom: 40px;
+}
+
+.Why-luvwish-card:hover {
+  transform: rotate(-10deg);
+  background-color: #D91374;
+}
+
+.Why-luvwish-card * {
+  color: white;
+}
+
+.Why-luvwish-card-tit {
+  font-weight: 700;
+  font-size: 33px;
+}
+
+.why-choose-us-tit-wrap h3 {
+  color: #d91374;
+}
+
+.why-choose-us-tit-wrap p {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+.sec-p {
+  padding: 80px 0px;
+}
+
+.how-it-works-big-tit {
+  font-size: 64px;
+  color: var(--primary);
+  text-align: center;
+}
+
+.pink-tit {
+  color: var(--primary);
+}
+
+.how-it-works-img-wrap {
+  margin-bottom: 40px;
+}
+
+.footer-sec {
+  padding: 100px 0px;
+  background-color: var(--primary);
+}
+
+.footer-sec * {
+  color: white;
+}
+
+.social-meadia-wrap {
+  display: flex;
+  padding: 50px 0px;
+  gap: 10px;
+}
+
+.footer-email-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-email-wrap input {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 8px 13px;
+  color: white;
+}
+
+.footer-email-wrap input::placeholder {
+  color: white;
+}
+
+.footer-email-wrap input:focus-visible {
+  outline: none;
+}
+
+.footer-mail-sub-btn {
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 8px 27px;
+}
+
+.accordion-header {
+  background-color: var(--primary) !important;
+}
+
+.accordion-button {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.accordion-item {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.accordion-body {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+.faq-content-wrap {
+  /* margin-top: 200px; */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+  padding: 10px !important;
+  border-radius: 50% !important;
+  height: 40px !important;
+  width: 40px !important;
+  font-size: 10px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+}
+
+.swiper-button-prev {
+  bottom: 0px !important;
+  left: 40% !important;
+  right: auto !important;
+  top: auto !important;
+}
+
+.swiper-button-next {
+  bottom: 0px !important;
+  right: 40% !important;
+  left: auto !important;
+  top: auto !important;
+}
+
+.swiper {
+  padding-bottom: 50px !important;
+}
+
+.contact-us-sec {
+  color: var(--primary);
+}
+
+.contact-us-sec input::placeholder {
+  color: var(--primary);
+}
+
+.contact-us-form-wrap input {
+  color: var(--primary);
+  border-radius: 25px;
+  padding: 13px 8px;
+  width: 100%;
+  font-size: 13px;
+  margin-bottom: 30px;
+  border-color: var(--primary);
+  outline: none;
+}
+
+.contact-us-form-wrap input:focus-visible {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.contact-us-form-wrap form h3 {
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+
+.contact-us-form-card {
+  background-color: var(--secondary);
+  padding: 27px;
+  border-radius: 25px;
+}
+
+.contact-us-form-card-inner-card {
+  background-color: white;
+  margin-bottom: 31px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.contact-us-form-card-inner-card p {
+  margin: 0px;
+}
+
+.contact-us-form-card-inner-bottom-card {
+  border-top: 2px solid var(--primary);
+  padding-top: 12px;
+}
+
+.social-links {
+  display: flex;
+  gap: 8px;
+}
+
+.contact-us-form-btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  margin-top: 20px;
+  border: 0px;
+}
+
+.customer-feedback-sec-tit-wrap {
+  margin-bottom: 50px;
+}
+
+.customer-feedback-sec-tit-wrap h2 {
+  max-width: 23%;
+  width: 100%;
+  margin: 0px auto 16px;
+}
+
+.customer-feedback-card {
+  background-color: var(--primary);
+  color: white;
+  padding: 30px 30px;
+  text-align: center;
+  position: relative;
+  min-height: 300px;
+  height: auto;
+  display: grid;
+  place-content: center;
+}
+
+.customer-feedback-card h3 {
+  margin-bottom: 20px;
+}
+
+.customer-feedback-card-inner-img1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.customer-feedback-card-inner-img2 {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.customer-feedback-card span {
+  height: 2px;
+  border-top: 3px dashed white;
+  width: 30%;
+  margin: 0px auto;
+}
+
+.customer-feedback-card-img img {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background-color: black;
+  border-radius: 50%;
+  overflow: hidden;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.customer-feedback-card-wrap {
+  padding: 100px 0px 0px;
+}
+
+.customer-feedback-card {
+  margin-bottom: 70px;
+}
+
+.product-listing-main-sec-iiner-left-card button {
+  background-color: #e94d8b;
+  border: none;
+  padding: 8px 13px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+}
+
+.product-listing-main-sec h1 {
+  margin-bottom: 40px;
+}
+
+.product-listing-main-sec-iiner-left-card {
+  background-color: #f9d6ea;
+  padding: 0px 26px 50px;
+  border-radius: 25px;
+}
+
+.Product-Listing-Component-card-img {
+  position: relative;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+
+.product-listing-card {
+  border: none !important;
+  box-shadow: 0px white !important;
+  text-align: center;
+  max-width: 306px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.product-listing-card p {
+  font-family: "Montserrat";
+  font-size: 13px;
+}
+
+.product-listing-card h5 {
+  font-family: "Montserrat";
+  font-size: 17px;
+}
+
+.product-listing-card .card-body{
+  padding: 40px 40px;
+}
+
+.Product-Listing-Component-card-img {
+  max-width: 306px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.Product-Listing-Component-card-img {
+  max-width: 306px;
+  width: 100%;
+  height: 316px;
+
+}
+
+.Product-Listing-Component-card-img a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.Product-Listing-Component-card-img img{
+  object-fit: cover;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+
+}
+
+.react-datepicker__header{
+  background-color: var(--secondary) !important;
+}
+
+
+.nav-options {
+  color: #000;
+  font-weight: 500;
+}
+
+.wallet-img img {
+  max-height: 30px;
+}
+
+.signin-from-card{
+  padding: 30px 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0px auto;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+}
+
+.about-cont-wrap{
+  padding-top: 70px;
+}
+
+.about-us-sec-two{
+  background-color: #F9CEE4;
+  padding: 20px 0px;
+}
+
+.card-product-img{
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
+
+body .Doughnut-cart-admin{
+  width: 100% !important;
+  height: 400px !important; 
+}
+
