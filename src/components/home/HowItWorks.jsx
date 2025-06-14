@@ -1,12 +1,14 @@
 import React from 'react'
-import Img1 from "../../assets/images/how-it-works/how-it-works-img-1.png"
+import Img1 from "../../assets/images/how-it-works/how-it-works-img-1.jpg"
 import Img2 from "../../assets/images/how-it-works/how-it-works-img-2.png"
 
 const HowItWorks = () => {
   return (
     <>
      <section className="how-it-works-sec sec-p">
+        
         <div className="container">
+            <h3 className='pink-tit how-its-work-main-tit mb-5'>How a Wish Turned into Luvwish</h3>
             <div className="row">
                 <div className="col-lg-7">
                     <div className="how-it-works-img-wrap">
@@ -25,16 +27,16 @@ const HowItWorks = () => {
 
                 </div>
                 <div className="col-lg-5">
-                    <p>It started with Sarath’sdeep concern for the health of women and his dream to make periods a celebrated part of womanhood. Akhilesh, a BBA graduate who had a knack for business, they started on a journey to make hygiene essentials accessible and enjoyable</p>
+                    <p>It started with Sarath’s deep concern for the health of women and his dream to make periods a celebrated part of womanhood. Akhilesh, a BBA graduate who had a knack for business, they started on a journey to make hygiene essentials accessible and enjoyable</p>
 
-                    <p>Luvwish’s curated packs, offered at an affordable ₹249, include everything from sanitary pads to pain relief packs, thoughtfully designed to cater to women’s needs. “Wherever we go, we will be hygienic,” Sarath emphasizes, showcasing their commitment to convenience and care.</p>
+                    <p>Luvwish’s curated packs, offered at an affordable ₹239, include everything from sanitary pads to pain relief packs, thoughtfully designed to cater to women’s needs. “Wherever we go, we will be hygienic,” Sarath emphasizes, showcasing their commitment to convenience and care.</p>
 
                     <p>Their packs feature reusable cotton pads and plastic-free disposable bags and are assembled by their family with love, much like the personal touch that defines Luvwish. This approach reflects their dedication to both sustainability and care. With dreams of spreading their influence across Kerala and beyond, Sarath and Akhilesh’s journey is just beginning.</p>
 
 
                     <p>The story of Sarath and Akhilesh is a testament to the youthful ambition and power of social media. The content creation skills of Sarath have been the main drivingforce in breakingthe stigma around menstruation, and helping women be confidentabout their periods. “In the future,when our people think of periods, they will remember Luvwish,” Sarath envisions.</p>
 
-                    <h2 className='how-it-works-big-tit'>“WHEREVER WE   GO, WE WILL BE HYGIENIC”</h2>
+                    <h2 className='how-it-works-big-tit pt-5'>“WHEREVER WE   GO, WE WILL BE HYGIENIC”</h2>
                 </div>
                 <div className="col-lg-12">
                     <h3 className='pink-tit'>Akhilesh & Sarath</h3>

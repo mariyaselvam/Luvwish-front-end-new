@@ -7,6 +7,7 @@ import Phone from "../assets/images/contact-us/phone.svg";
 import X from "../assets/images/contact-us/X.svg";
 import Facebook from "../assets/images/contact-us/facebook.svg";
 import Instagram from "../assets/images/contact-us/instagram.svg";
+import { Link } from "react-router-dom";
 import { sendContactForm } from "../api/Contact"; // ✅ Adjust path if needed
 
 const ContactUs = () => {
@@ -169,15 +170,15 @@ const ContactUs = () => {
                 <div className="contact-us-form-card-inner-bottom-card">
                   <span>Connect with us</span>
                   <div className="social-links">
-                    <a className="social-links-each" href="#">
+                    <Link className="social-links-each" >
                       <img src={X} alt="X" />
-                    </a>
-                    <a className="social-links-each" href="#">
+                    </Link>
+                    <Link className="social-links-each" target="_blank" to="https://www.facebook.com/luvwish.in?mibextid=LQQJ4d&rdid=IMVIszYBEi82G69V&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Gnxco3bzg%2F%3Fmibextid%3DLQQJ4d#">
                       <img src={Facebook} alt="Facebook" />
-                    </a>
-                    <a className="social-links-each" href="#">
+                    </Link>
+                    <Link className="social-links-each" target="_blank" to="https://www.instagram.com/luvwish.in/?igsh=MTB3MTJidzgzcnlobQ%3D%3D&utm_source=qr#" >
                       <img src={Instagram} alt="Instagram" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

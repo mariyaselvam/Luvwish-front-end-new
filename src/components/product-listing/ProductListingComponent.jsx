@@ -8,25 +8,24 @@ const ProductListingComponent = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true); // added
   const navigate = useNavigate();
-  
-useEffect(() => {
-  const loadProducts = async () => {
-    try {
-      const response = await fetchProducts();
-      console.log("Fetched products:", response); // ✅ Keep for safety
-      const data = Array.isArray(response.data) ? response.data : [];
-      setProducts(data); // ✅ Guaranteed to be an array
-    } catch (error) {
-      console.error("Error fetching products:", error);
-      setProducts([]); // ✅ fallback to empty array
-    } finally {
-      setLoading(false);
-    }
-  };
 
-  loadProducts();
-}, []);
+  useEffect(() => {
+    const loadProducts = async () => {
+      try {
+        const response = await fetchProducts();
+        console.log("Fetched products:", response); // ✅ Keep for safety
+        const data = Array.isArray(response.data) ? response.data : [];
+        setProducts(data); // ✅ Guaranteed to be an array
+      } catch (error) {
+        console.error("Error fetching products:", error);
+        setProducts([]); // ✅ fallback to empty array
+      } finally {
+        setLoading(false);
+      }
+    };
 
+    loadProducts();
+  }, []);
 
   const handleAddToCart = async (productId) => {
     try {
@@ -110,7 +109,18 @@ useEffect(() => {
                   {product.name}
                 </h5>
               </Link>
-              <p className="card-text">{product.description}</p>
+              <p
+                className="card-text"
+                style={{
+                  display: "-webkit-box",
+                  WebkitLineClamp: 2,
+                  WebkitBoxOrient: "vertical",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                }}
+              >
+                {product.description}
+              </p>
             </div>
           </div>
         </div>

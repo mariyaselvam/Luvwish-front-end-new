@@ -175,6 +175,9 @@ const AdminOrdersSection = () => {
                   <td>{order.createdAt.split("T")[0]}</td>
                   <td>
                     <button
+                    style={{
+                      fontSize:"13px"
+                    }}
                       className="btn btn-sm btn-outline-success"
                       onClick={() => downloadInvoice(order._id)}
                     >

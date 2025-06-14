@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
     <>
-      <section className="banner-sec sec-p">
+      <section className="banner-sec">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -12,9 +13,14 @@ const Banner = () => {
 
                 <span>Stay Fresh Stay Fearless</span>
 
-                <button className="primary-btn">
+                <Link to="/products" className="primary-btn"
+                 style={{
+                  display:"block",
+                  maxWidth:"fit-content"
+                 }}
+                 >
                     Shop Now 
-                </button>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6"></div>

@@ -9,18 +9,26 @@ const Login = () => {
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
-    e.preventDefault();
+const handleLogin = async (e) => {
+  e.preventDefault();
 
-    try {
-      const response = await signinUser({ email, password });
-      setMessage("Login successful!");
-      console.log(response.data);
+  try {
+    const response = await signinUser({ email, password });
+    setMessage("Login successful!");
+
+    // ✅ Optional: Save token or user if needed
+    // localStorage.setItem("token", response.data.token);
+
+    // ✅ Navigate and refresh after short delay
+    setTimeout(() => {
       navigate("/");
-    } catch (error) {
-      setMessage(error.response?.data?.message || "Login failed");
-    }
-  };
+      window.location.reload(); // 🔄 Refresh the app
+    }, 1000);
+  } catch (error) {
+    setMessage(error.response?.data?.message || "Login failed");
+  }
+};
+
 
   return (
     <div className="mt-5 signin-from-card" style={styles.card}>

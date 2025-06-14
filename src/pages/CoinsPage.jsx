@@ -12,21 +12,28 @@ const CoinsPage = () => {
 
   return (
     <>
-    <Nav />
+      <Nav />
 
-    <div className="container mt-4">
-      <div className="p-4 bg-white rounded shadow border text-center">
-        <h2 className="mb-3">Welcome, {user.name} 👋</h2>
-        <h4>Luvwish Cashback</h4>
-        <h4>
-          You have <span className="text-success">{user.coins}</span> coin
-          {user.coins !== 1 && "s"} 🪙
-        </h4>
+      <section className="sec-p">
+
+      <div className="container">
+        <div className="row justify-content-center align-items-center">
+        <div
+          className="p-5  coin-container shadow text-white text-center col-lg-5"
+          style={{ backgroundColor: "#D91374" , borderRadius:"60px" }}
+        >
+          <h2 className="mb-4">Luvwish Cashback</h2>
+          <h4>Available Balance</h4>
+          <h1 className="display-4 fw-bold">
+            {user.coins} 🪙
+          </h1>
+        </div>
+        </div>
       </div>
-    </div>
 
-    <Footer />
+      </section>
 
+      <Footer />
     </>
   );
 };

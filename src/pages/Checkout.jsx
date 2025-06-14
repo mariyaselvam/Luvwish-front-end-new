@@ -122,7 +122,7 @@ const Checkout = () => {
       }
 
       const options = {
-        key: import.meta.env.VITE_RAZORPAY_KEY_ID,
+        key: "rzp_test_p2tMAD8K94uYcO",
         amount: payableAmount * 100,
         currency: data.order.currency,
         name: "Test Store",
@@ -331,8 +331,10 @@ const Checkout = () => {
                     required
                   />
 
-                              <div className="d-flex gap-2 align-items-center">
+            <div className="row mb-3">
+              <div className="col-lg-6">
               <input
+               
                 type="number"
                 min={0}
                 max={1000}
@@ -341,9 +343,10 @@ const Checkout = () => {
                 placeholder="Enter coins to redeem"
                 className="form-control"
               />
+              </div>
               <button
                 type="button"
-                className="btn btn-outline-primary"
+                className="btn btn-outline-primary col-lg-6"  
                 disabled={isProcessing || coinsInput <= 0}
                 onClick={async () => {
                   setIsProcessing(true);
@@ -435,8 +438,8 @@ const Checkout = () => {
                     <span>₹ {subtotal.toFixed(2)}</span>
                   </li>
                   <li className="list-group-item d-flex justify-content-between">
+                    <span>Shipping</span>
                     <span>₹ {Number(shippingCharge || 0).toFixed(2)}</span>
-                    <span>₹ {Number(payableAmount || 0).toFixed(2)}</span>
                   </li>
                   <li className="list-group-item d-flex justify-content-between">
                     <span>Coin Discount</span>

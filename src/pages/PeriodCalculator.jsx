@@ -45,7 +45,7 @@ const PeriodCalculator = () => {
                 {/* Form Column */}
                 <div className="col-lg-6 col-md-12">
                   <div className="p-4 h-100">
-                    <h3 className="text-center mb-4" style={{ color: "#e94d8b" }}>
+                    <h3 className="mb-4" style={{ color: "#e94d8b" }}>
                       Period Calculator
                     </h3>
 
@@ -204,6 +204,17 @@ const PeriodCalculator = () => {
                       <p>
                         Changes in the body are imminent during different phases of the menstrual cycle... (truncated)
                       </p>
+
+                      <div className="row">
+                        <div className="col-lg-4">
+                          <div className="SignsYourPeriodisComing-card">
+                            <div className="SignsYourPeriodisComing-card-img">
+                              <img src="" alt="" />
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </div>
                     </>
                   )}
                   {step === 3 && (
@@ -228,7 +239,7 @@ const PeriodCalculator = () => {
                               style={{ backgroundColor: "#ffe6f0", border: "1px solid #e94d8b" }}
                             >
                               <h6 className="mb-2" style={{ color: "#e94d8b" }}>Tip {tip}</h6>
-                              <p>{
+                                <p>{
                                 tip === 1
                                   ? "Keeping regular track of your cycle helps spot irregularities early..."
                                   : tip === 2
@@ -247,7 +258,7 @@ const PeriodCalculator = () => {
             </div>
           </div>
         </div>
-      </section>
+        </section>
       <Footer />
     </>
   );

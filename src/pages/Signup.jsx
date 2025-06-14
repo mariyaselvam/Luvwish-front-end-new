@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signupUser, verifyOtp } from "../api/auth";
+import { useAuth } from "../context/AuthContext"; // 🔥 Add this
 
 const Signup = () => {
-  const [step, setStep] = useState("signup"); // "signup" or "otp"
+  const [step, setStep] = useState("signup");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -11,13 +12,17 @@ const Signup = () => {
 
   const [message, setMessage] = useState("");
 
+  const navigate = useNavigate();
+  const { setUser } = useAuth(); // 🔥 Use this
+
+
   const handleSignup = async (e) => {
     e.preventDefault();
 
     try {
       await signupUser({ name, email, password });
-      setMessage("Signup successful! Please check your email for the OTP.");
-      setStep("otp");
+      setMessage("Signup successful! Redirecting to login...");
+      navigate("/login"); // ✅ Redirect here
     } catch (error) {
       setMessage(error.response?.data?.message || "Signup failed");
     }
@@ -124,10 +129,7 @@ const Signup = () => {
       {step === "signup" && (
         <div className="text-center mt-4" style={{ fontSize: "14px" }}>
           Already have an account?{" "}
-          <Link
-            to="/login"
-            style={{ color: "#e94d8b", fontWeight: "bold" }}
-          >
+          <Link to="/login" style={{ color: "#e94d8b", fontWeight: "bold" }}>
             Sign In
           </Link>
         </div>

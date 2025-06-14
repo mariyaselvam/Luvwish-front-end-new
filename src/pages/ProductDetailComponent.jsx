@@ -88,17 +88,21 @@ const ProductDetailComponent = () => {
             <img src={product.image} alt={product.name} className="img-fluid" />
           </div>
           <div className="col-md-6">
-            <h2 className="pink-tit">{product.name}</h2>
+            <h2 className="pink-tit mb-4 px48" >{product.name}</h2>
+            <h4 className="pink-tit mb-4 px30">₹ {product.price}</h4>
+
             <p>{product.description}</p>
             {Array.isArray(product.kitItems) && product.kitItems.length > 0 && (
               <div className="mb-4">
-                <h5 className="mb-3">What's inside this kit:</h5>
+                {/* <h5 className="mb-3">What's inside this kit:</h5> */}
                 <ul className="list-unstyled">
                   {product.kitItems.map((item, index) => (
-                    <li key={index} className="d-flex align-items-center mb-2" 
-                       style={{
-                        color:"#e94d8b"
-                       }}
+                    <li
+                      key={index}
+                      className="d-flex align-items-center mb-2"
+                      style={{
+                        color: "#e94d8b",
+                      }}
                     >
                       <div
                         style={{
@@ -112,17 +116,13 @@ const ProductDetailComponent = () => {
                       />
                       <span>
                         {item.name}{" "}
-                        <strong className="">
-                          X {item.quantity}
-                        </strong>
+                        <strong className="">X {item.quantity}</strong>
                       </span>
                     </li>
                   ))}
                 </ul>
               </div>
             )}
-
-            <h4 className="pink-tit mb-4">₹ {product.price}</h4>
 
             <div className="d-flex align-items-center mb-3 gap-2">
               <div>

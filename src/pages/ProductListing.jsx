@@ -12,7 +12,7 @@ const ProductListing = () => {
   return (
     <>
       <Nav />
-      <section className="product-listing-main-sec sec-p">
+      <section className="product-listing-main-sec sec-p pink-tit">
         <div className="container">
           <h1>Period Care, Packed with Love</h1>
         </div>

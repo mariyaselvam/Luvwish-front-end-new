@@ -1,6 +1,7 @@
 import X from "../../assets/images/footer/x-twitter.svg"
 import Facebook from "../../assets/images/footer/Facebook-app.svg"
 import instagram from "../../assets/images/footer/instagram-app.svg"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -24,19 +25,19 @@ const Footer = () => {
 
                 <div className="social-meadia-wrap">
                      <div className="social-meadia-wrap-img">
-                      <a href="#">
+                      <Link to="#">
                         <img src={X} alt="" />
-                      </a>
+                      </Link>
                      </div>
                      <div className="social-meadia-wrap-img">
-                      <a href="#">
+                      <Link target="_blank" to="https://www.facebook.com/luvwish.in?mibextid=LQQJ4d&rdid=IMVIszYBEi82G69V&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Gnxco3bzg%2F%3Fmibextid%3DLQQJ4d#">
                         <img src={Facebook} alt="" />
-                      </a>
+                      </Link>
                      </div>
                      <div className="social-meadia-wrap-img">
-                      <a href="#">
+                      <Link target="_blank" to="https://www.instagram.com/luvwish.in/?igsh=MTB3MTJidzgzcnlobQ%3D%3D&utm_source=qr#">
                         <img src={instagram} alt="" />
-                      </a>
+                      </Link>
                      </div>
                 </div>
               </div>
@@ -60,28 +61,28 @@ const Footer = () => {
               <h3>Best Sellers</h3>
 
               <p>
-                <a href="#">Luvwish Period Kit</a>
+                <Link to="/product/68473575af2baa15ab30d0b7">Luvwish Period Kit</Link>
               </p>
               <p>
-                <a href="#">Cramp Relief Patches</a>
+                <Link to="/product/683f5e2c55cc5b9786f3dd9d">Cramp Relief Patches</Link>
               </p>
             </div>
             <div className="col-lg-2">
               <h3>Info</h3>
               <p>
-                <a href="#">About Us</a>
+                <Link to="/">About Us</Link>
               </p>
               <p>
-                <a href="#">Buy</a>
+                <Link to="/products">Buy</Link>
               </p>
               <p>
-                <a href="#">Periods Calculator</a>
+                <Link to="/Period-Calculator">Periods Calculator</Link>
               </p>
               <p>
-                <a href="#">Contact Us</a>
+                <Link to="/contact">Contact Us</Link>
               </p>
               <p>
-                <a href="#">FAQS</a>
+                <Link to="/faq">FAQS</Link>
               </p>
             </div>
 
