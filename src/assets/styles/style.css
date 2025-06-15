@@ -44,6 +44,52 @@ p {
   background-color: #f8f9fa;
 }
 
+body .card-title{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: "Montserrat" !important;
+}
+
+body .card-text{
+  font-family: "Montserrat" !important;
+}
+
+body .add-to-cart-btn{
+  font-family: "Montserrat" !important;
+}
+
+body .add-to-cart-btn svg{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 3px;
+  height: 18px;
+  width: 18px;
+}
+
+body .cal-btn {
+  border-radius: 25px;
+  width: 100%;
+  max-width: 192px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.PeriodCalculator-main-tit {
+  font-weight: 700;
+  font-size: 48px;
+} 
+
+.cal-bottom-para{
+   font-weight: 400;
+   font-size: 20px;
+   color: black;
+}
+
+.f-w-700 {
+  font-weight: 700;
+}
+
 body h1,
 h2,
 h3,
@@ -110,7 +156,7 @@ h5 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 100px 0px;
+  padding: 150px 0px;
 }
 
 .banner-sec h1 {
@@ -264,32 +310,36 @@ h1 {
 }
 
 .accordion-header {
-  background-color: var(--primary) !important;
+  background-color: #F9CEE4 !important;
+
 }
 
 .accordion-button {
-  background-color: var(--primary) !important;
-  color: white !important;
+  background-color: #F9CEE4 !important;
+  color: #D91374 !important;
 }
 
 .accordion-item {
-  background-color: var(--primary) !important;
+  background-color: #F9CEE4 !important;
   color: white !important;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .accordion-body {
-  background-color: var(--primary) !important;
-  color: white !important;
+  background-color: #F9CEE4 !important;
+  color: #D91374 !important;
 }
 
 .accordion-item:first-of-type > .accordion-header .accordion-button {
-  background-color: var(--primary) !important;
-  color: white !important;
+  background-color: #F9CEE4 !important;
+  color: #D91374 !important;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: var(--primary) !important;
-  color: white !important;
+  background-color: #F9CEE4 !important;
+  color: #D91374 !important;
 }
 
 .faq-content-wrap {
@@ -486,6 +536,7 @@ h1 {
   background-color: #f9d6ea;
   padding: 0px 26px 50px;
   border-radius: 25px;
+  margin-bottom: 30px;
 }
 
 .Product-Listing-Component-card-img {
@@ -516,6 +567,7 @@ h1 {
 .product-listing-card h5 {
   font-family: "Montserrat";
   font-size: 17px;
+  text-transform: uppercase;
 }
 
 .product-listing-card .card-body {
@@ -586,4 +638,167 @@ h1 {
 body .Doughnut-cart-admin {
   width: 100% !important;
   height: 400px !important;
+}
+
+.Aamukham-creatives-tit{
+  text-align: center;
+}
+
+.cash-coin-wrap{
+  background-color: #E94D8B;
+  backdrop-filter: #4B668014;
+  padding: 21px 72px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cash-coin-wrap h3{
+  font-size: 24px;
+  font-weight: 500;
+  border-bottom: 1px solid white;
+  padding-bottom: 12px;
+}
+
+.cash-coin-wrap h4{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.coin-sec{
+  max-width: 550px;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.coin-sec p{
+  font-size: 12px;
+  font-family: "Montserrat";
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  
+}
+
+.popup-content {
+  background: var(--primary);
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+  max-width: 550px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  color: white;
+    padding: 90px 150px;
+}
+
+.gift-icon{
+  height: 81px;
+  width: 81px;
+    background-color: #E94D8B;
+  backdrop-filter: #4B668014;
+  display: grid;
+  place-content: center;
+  margin: 0px auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+}
+
+.popup-overlay-close-btn{
+  padding: 7px 30px;
+  border: none;
+  border-radius: 30px;
+}
+
+.pink-span{
+  font-family: "Inria Serif", serif !important;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 23px;
+  font-style: italic;
+}
+
+.SignsYourPeriodisComing-card{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.SignsYourPeriodisComing-card-img{
+  flex-shrink: 0;
+}
+
+.SignsYourPeriodisComing-cont-wrap h4{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.SignsYourPeriodisComing-cont-wrap p{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.Privacy-Policy-tit{
+  color: var(--primary);
+}
+
+.faq-input{
+  border: 1px solid #F9CEE4;
+  border-radius: 25px;
+  max-width: 100%;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.faq-form{
+  padding: 0px 100px;
+}
+
+.faq-form-btn{
+  padding: 12px 27px;
+  border-radius: 30px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  margin: 0px auto;
+  width: fit-content;
+  display: block;
+}
+
+.faq-cont-nd-img-sec{
+  color: var(--primary);
+}
+
+.contact-us-form-card-inner-card-icons {
+  flex-shrink: 0;
+}
+
+.product-ratting-wrap{
+  background-color: var(--primary);
+  color: white;
+  width: fit-content;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin:0px auto 10px;
+  display: flex;
+  gap: 5px;
+  font-family: "Montserrat";
+}
+
+.product-ratting-wrap img{
+  flex-shrink: 0;
+
 }

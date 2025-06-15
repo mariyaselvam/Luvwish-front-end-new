@@ -16,18 +16,18 @@ const handleLogin = async (e) => {
     const response = await signinUser({ email, password });
     setMessage("Login successful!");
 
-    // ✅ Optional: Save token or user if needed
-    // localStorage.setItem("token", response.data.token);
+    // ✅ Save user & coins to localStorage
+    localStorage.setItem("user", JSON.stringify(response.data.user));
+    localStorage.setItem("justLoggedIn", "true"); // flag to show popup after redirect
 
-    // ✅ Navigate and refresh after short delay
     setTimeout(() => {
       navigate("/");
-      window.location.reload(); // 🔄 Refresh the app
     }, 1000);
   } catch (error) {
     setMessage(error.response?.data?.message || "Login failed");
   }
 };
+
 
 
   return (

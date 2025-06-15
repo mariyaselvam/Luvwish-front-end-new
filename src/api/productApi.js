@@ -29,16 +29,11 @@ export const updateProduct = async (productId, formData) => {
 
 
 
-export const createProduct = async (productData) => {
-  const formData = new FormData();
+export const createProduct = async (formData) => {
+  console.log("FormData being submitted to createProduct:");
 
-  formData.append("name", productData.name);
-  formData.append("description", productData.description);
-  formData.append("price", productData.price);
-  formData.append("kitItems", JSON.stringify(productData.kitItems));
-
-  if (productData.image) {
-    formData.append("image", productData.image);
+  for (let pair of formData.entries()) {
+    console.log(`${pair[0]}: ${pair[1]}`);
   }
 
   return axiosClient.post("/products", formData, {
@@ -47,3 +42,4 @@ export const createProduct = async (productData) => {
     },
   });
 };
+

@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
 import { fetchProducts } from "../../api/productApi";
 import { addToCart } from "../../api/cartApi";
+import RattingStart from "../../assets/images/product-listing/ratting-star.svg"
 
 const ProductListingComponent = () => {
   const [products, setProducts] = useState([]);
@@ -65,9 +66,9 @@ const ProductListingComponent = () => {
   }
 
   return (
-    <div className="row">
+    <>
       {products.map((product) => (
-        <div className="col-md-6 mb-4" key={product._id}>
+        <div className="col-md-4 mb-4" key={product._id}>
           <div className="card h-100 product-listing-card">
             <div
               className="Product-Listing-Component-card-img"
@@ -86,13 +87,14 @@ const ProductListingComponent = () => {
                 disabled={!product.inStock}
                 onClick={() => handleAddToCart(product._id)}
                 style={{
-                  backgroundColor: "#ff69b4",
+                  backgroundColor: "#E94D8B",
                   borderColor: "#ff69b4",
                   color: "#fff",
                   display: "flex",
                   alignItems: "center",
                   gap: "5px",
                   fontSize: "14px",
+                  borderRadius:"15px"
                 }}
               >
                 <FaPlus />
@@ -101,6 +103,10 @@ const ProductListingComponent = () => {
             </div>
 
             <div className="card-body">
+                <div className="product-ratting-wrap">
+                    4.9 <img src={RattingStart} alt="" />
+                </div>
+
               <Link
                 to={`/product/${product._id}`}
                 className="text-decoration-none text-dark"
@@ -125,7 +131,7 @@ const ProductListingComponent = () => {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 };
 

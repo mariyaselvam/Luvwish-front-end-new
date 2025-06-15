@@ -11,6 +11,7 @@ import {
 
 const CartPage = () => {
   const [cartItems, setCartItems] = useState([]);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
   const SHIPPING_COST = 103;
 
@@ -24,6 +25,8 @@ const CartPage = () => {
       }
     } catch (error) {
       console.error("Failed to fetch cart:", error);
+    } finally{
+      setLoading(false);
     }
   };
 
@@ -80,6 +83,32 @@ const CartPage = () => {
 
   const subtotal = calculateSubtotal();
   const total = subtotal + SHIPPING_COST;
+
+  if (loading) {
+    return (
+      <div
+        className="d-flex justify-content-center align-items-center"
+        style={{ height: "100vh" }}
+      >
+        <div
+          style={{
+            border: "8px solid #f3f3f3",
+            borderTop: "8px solid #e94d8b",
+            borderRadius: "50%",
+            width: "60px",
+            height: "60px",
+            animation: "spin 1s linear infinite",
+          }}
+        />
+        <style>{`
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+        `}</style>
+      </div>
+    );
+  }
 
   return (
     <>

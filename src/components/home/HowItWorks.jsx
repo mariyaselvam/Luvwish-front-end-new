@@ -29,7 +29,7 @@ const HowItWorks = () => {
                 <div className="col-lg-5">
                     <p>It started with Sarath’s deep concern for the health of women and his dream to make periods a celebrated part of womanhood. Akhilesh, a BBA graduate who had a knack for business, they started on a journey to make hygiene essentials accessible and enjoyable</p>
 
-                    <p>Luvwish’s curated packs, offered at an affordable ₹239, include everything from sanitary pads to pain relief packs, thoughtfully designed to cater to women’s needs. “Wherever we go, we will be hygienic,” Sarath emphasizes, showcasing their commitment to convenience and care.</p>
+                    <p>Luvwish’s curated packs, offered at an affordable ₹299, include everything from sanitary pads to pain relief packs, thoughtfully designed to cater to women’s needs. “Wherever we go, we will be hygienic,” Sarath emphasizes, showcasing their commitment to convenience and care.</p>
 
                     <p>Their packs feature reusable cotton pads and plastic-free disposable bags and are assembled by their family with love, much like the personal touch that defines Luvwish. This approach reflects their dedication to both sustainability and care. With dreams of spreading their influence across Kerala and beyond, Sarath and Akhilesh’s journey is just beginning.</p>
 

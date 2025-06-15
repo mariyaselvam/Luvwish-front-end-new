@@ -45,17 +45,18 @@ const Footer = () => {
             <div className="col-lg-3">
               <h3>Policies</h3>
               <p>
-                <a href="#">Privacy Policy</a>
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </p>
               <p>
-                <a href="#">Terms & Conditions</a>
+                <Link to="/terms-and-conditions">Terms & Conditions</Link>
               </p>
               <p>
-                <a href="#">Shipping & Cancellation</a>
+                <Link to="/shipping-cancellation">Shipping & Cancellation </Link>
               </p>
               <p>
-                <a href="#">Returns & Refunds</a>
+                <Link to="/returns-refundPolicy">Returns & Refunds</Link>
               </p>
+
             </div>
             <div className="col-lg-3">
               <h3>Best Sellers</h3>

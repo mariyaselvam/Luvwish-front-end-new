@@ -16,16 +16,17 @@ const AboutUs = () => {
      <section className='about-us-sec-two'>
           <div className="container">
             <div className="row">
-                <div className="col-lg-3">
+                <div className="col-3">
                    <div className="about-img">
                     <img src={Img1} alt="" />
                    </div>
                 </div>
-                  <div className="col-lg-8 5">
+                  <div className="col-8">
                       <div className="about-cont-wrap">
-<p>At Luvwish, we believe that period care should be simple, stylish, and stress-free. Our journey began with a simple thought—why should managing periods be a hassle? We wanted to create a solution that blends convenience, hygiene, and empowerment, all wrapped up in a discreet and travel-friendly kit</p>
+                        
+<p>  <span className='pink-span'>At Luvwish,</span> we believe that period care should be simple, stylish, and stress-free. Our journey began with a simple thought—why should managing periods be a hassle? We wanted to create a solution that blends convenience, hygiene, and empowerment, all wrapped up in a discreet and travel-friendly kit</p>
 
-                       <p>We know that periods are a natural part of life, yet they often come with unexpected moments. Whether you’re at work, in class, on a trip, or out with friends, finding the right products at the right time can be challenging. That’s why we designed the Luvwish Periods Kit—a compact, ready-to-use pack that ensures you’re always prepared</p>
+                       <p>We know that periods are a natural part of life, yet they often come with unexpected moments. Whether you’re at work, in class, on a trip, or out with friends, finding the right products at the right time can be challenging. That’s why we designed the <span className='pink-span'> Luvwish Periods Kit—a compact, ready-to-use pack </span> that ensures you’re always prepared</p>
                   
                       </div>
 

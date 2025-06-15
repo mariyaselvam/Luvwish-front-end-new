@@ -76,11 +76,7 @@ const ProductsSection = () => {
     formData.append("name", productForm.name);
     formData.append("description", productForm.description);
     formData.append("price", productForm.price);
-
-    cleanedKitItems.forEach((item, idx) => {
-      formData.append(`kitItems[${idx}][name]`, item.name);
-      formData.append(`kitItems[${idx}][quantity]`, item.quantity);
-    });
+    formData.append("kitItems", JSON.stringify(cleanedKitItems)); // ✅ key fix
 
     if (productForm.image) {
       formData.append("image", productForm.image);
@@ -304,7 +300,7 @@ const ProductsSection = () => {
                         </div>
                         <div className="col-md-4">
                           <input
-                            type="number"
+                            type="text"
                             className="form-control"
                             placeholder="Quantity"
                             value={item.quantity}
@@ -316,7 +312,6 @@ const ProductsSection = () => {
                               )
                             }
                             min="1"
-                            required
                           />
                         </div>
                       </div>

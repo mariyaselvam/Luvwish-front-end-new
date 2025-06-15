@@ -88,8 +88,15 @@ const ProductDetailComponent = () => {
             <img src={product.image} alt={product.name} className="img-fluid" />
           </div>
           <div className="col-md-6">
-            <h2 className="pink-tit mb-4 px48" >{product.name}</h2>
-            <h4 className="pink-tit mb-4 px30">₹ {product.price}</h4>
+            <h2 className="pink-tit mb-4 px48">{product.name}</h2>
+            <div className="d-flex gap-4 ">
+              <h4 className="pink-tit mb-2 px30 text-muted">
+                <del>Rs : {product.price + 100}</del>
+              </h4>
+              <h4 className="pink-tit mb-4 px30">
+                Rs : {product.price}
+              </h4>
+            </div>
 
             <p>{product.description}</p>
             {Array.isArray(product.kitItems) && product.kitItems.length > 0 && (

@@ -94,9 +94,101 @@
     line-height: 130%;
     font-size: 14px;
   }
+
+  .contact-us-form-wrap {
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .contact-us-form-wrap input {
+    margin-bottom: 10px;
+  }
+
+  body .coin-container {
+    padding: 40px 30px !important;
+  }
+
+  .signup-from-card {
+    width: 90% !important;
+  }
+
+  .signin-from-card {
+    width: 90% !important;
+  }
+
+  .popup-content {
+    padding: 40px;
+  }
+
+  .PeriodCalculator-main-tit {
+    font-size: 24px;
+  }
+
+  body .cal-btn {
+    max-width: fit-content;
+  }
+
+  .about-cont-wrap {
+    padding-top: 30px;
+  }
+
+  .why-choose-us-tit-wrap .primary-btn {
+    margin: 0px auto;
+    display: block;
+    max-width: fit-content;
+  }
+
+  body .px48 {
+    font-size: 30px;
+  }
+
+  body .px30 {
+    font-size: 25px;
+  }
+
+  .list-unstyled li {
+    font-size: 16px;
+  }
+
+  .sec-p {
+    padding: 40px 0px;
+  }
+
+  .banner-sec h1 {
+    font-size: 15px;
+    font-family: "Montserrat" !important;
+    width: 50%;
+  }
+
+  .banner-sec {
+    padding: 40px 0px;
+  }
+
+  .banner-cont-wrap span {
+    font-size: 12px;
+  }
+
+  .primary-btn {
+    padding: 6px 20px;
+    font-size: 12px;
+  }
+
+  .nav-main-logo img {
+    width: 60%;
+  }
+
+  .nav-main-logo {
+    height: 60px;
+  }
+
+  .hamburger-icon {
+    top: auto !important;
+  }
 }
 
-/* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .swiper-button-prev,
   .swiper-button-next {
@@ -124,6 +216,41 @@
 
   .customer-feedback-card {
     padding: 20px;
+  }
+
+  .about-us-sec-two p {
+    font-size: 8px !important;
+    margin-bottom: 4px;
+  }
+
+  .pink-span {
+    font-size: 8px;
+  }
+
+  .about-cont-wrap {
+    padding-top: 20px;
+  }
+
+  .about-img {
+    display: grid;
+    place-content: center;
+    height: 100%;
+  }
+
+  .about-us-sec-two .row > * {
+    padding: 8px;
+  }
+
+  .about-us-sec {
+    padding-bottom: 10px;
+  }
+
+  .about-us-sec-tit-wrap h3 {
+    font-size: 20px;
+  }
+
+  .about-us-sec-tit-wrap P {
+    font-size:10px;
   }
 }
 

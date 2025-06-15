@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
+import ImgMain from "../../assets/images/Faq/faq-img.svg"
 
 const FaqSec = () => {
   return (
@@ -232,7 +233,25 @@ const FaqSec = () => {
               </Swiper>
             </div>
           </div>
-          <div className="col-lg-6"></div>
+          <div className="col-lg-6">
+            <div className="faq-cont-nd-img-sec text-center">
+              <div className="faq-main-img">
+                <img src={ImgMain} alt="" />
+              </div>
+              <h4 className="faq-main-tit">
+                Any Question ? 
+              </h4>
+              <p>You can ask anything you want to know about Luvwish</p>
+
+              <form className="text-start faq-form" action="#">
+                <p>Let me know</p>
+                <input className="faq-input" placeholder="Enter" type="text" />
+
+                <button className="faq-form-btn">Sent</button>
+
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>

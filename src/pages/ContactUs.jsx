@@ -152,19 +152,19 @@ const ContactUs = () => {
                   <div className="contact-us-form-card-inner-card-icons">
                     <img src={Phone} alt="Phone" />
                   </div>
-                  <p>+91 12345 67890</p>
+                  <p>+91 95623 88698</p>
                 </div>
                 <div className="contact-us-form-card-inner-card">
                   <div className="contact-us-form-card-inner-card-icons">
                     <img src={whatsapp} alt="WhatsApp" />
                   </div>
-                  <p>+91 12345 67890</p>
+                  <p>Karinjalipellam Chittur Palakkad Kerala India 678101</p>
                 </div>
                 <div className="contact-us-form-card-inner-card">
                   <div className="contact-us-form-card-inner-card-icons">
-                    <img src={Mail} alt="Mail" />
+                    <img  src={Mail} alt="Mail" />
                   </div>
-                  <p>mail@gmail.com</p>
+                  <p>luvwisho@gmail.com</p>
                 </div>
 
                 <div className="contact-us-form-card-inner-bottom-card">

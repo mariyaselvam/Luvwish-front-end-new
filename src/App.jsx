@@ -9,6 +9,10 @@ import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
 import VerifyOtp from "./pages/VerifyOtp";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import ShippingAndCancellationPolicy from "./pages/ShippingAndCancellationPolicy";
+import ReturnsAndRefundPolicy from "./pages/ReturnsAndRefundPolicy";
 
 // Protected Pages
 import Faq from "./pages/Faq";
@@ -44,6 +48,10 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/verify-otp" element={<VerifyOtp />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/shipping-cancellation" element={<ShippingAndCancellationPolicy />} />
+          <Route path="/returns-refundPolicy" element={<ReturnsAndRefundPolicy />} />
 
           {/* 🔒 Protected Routes */}
           <Route

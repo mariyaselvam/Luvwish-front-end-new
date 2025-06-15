@@ -17,7 +17,7 @@ const ProductListing = () => {
           <h1>Period Care, Packed with Love</h1>
         </div>
         <div className="container">
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-lg-4">
               <div className="product-listing-main-sec-iiner-left-card">
                 <div className="product-listing-main-sec-iiner-left-card-img">
@@ -33,9 +33,9 @@ const ProductListing = () => {
                 </button>
               </div>
             </div>
-            <div className="col-lg-8">
+            {/* <div className="col-lg-8"> */}
               <ProductListingComponent />
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </section>
