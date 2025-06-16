@@ -15,7 +15,7 @@ const Footer = () => {
                   <img src="" alt="" />
                 </div>
 
-                <h4>Signup and get 50% off on your first order</h4>
+                <h4>Everything You Need, Packed with Love</h4>
 
                 <form action="" className="footer-email-wrap">
                   <input type="email" placeholder="E-mail" required />
@@ -67,6 +67,12 @@ const Footer = () => {
               <p>
                 <Link to="/product/683f5e2c55cc5b9786f3dd9d">Cramp Relief Patches</Link>
               </p>
+              <p>
+                <Link to="/product/684d790d4daf6297b3d73864">Luvwish Sanitary Pad</Link>
+              </p>
+              <p>
+                <Link to="/product/684d7b424daf6297b3d73a62">Luvwish Combo</Link>
+              </p>
             </div>
             <div className="col-lg-2">
               <h3>Info</h3>
@@ -96,7 +102,18 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        
       </section>
+      <section className="footer-bottom-sec">
+        <div className="container">
+          <div className="row">
+            <div className="footer-bottom-content">
+            <p> Copyrights @2025 Aamukham Creatives. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     </>
   );
 };

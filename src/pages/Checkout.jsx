@@ -122,7 +122,7 @@ const Checkout = () => {
       }
 
       const options = {
-        key: "rzp_test_p2tMAD8K94uYcO",
+        key: import.meta.env.VITE_RAZORPAY_KEY_ID,
         amount: payableAmount * 100,
         currency: data.order.currency,
         name: "Test Store",

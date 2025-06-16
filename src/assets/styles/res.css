@@ -187,6 +187,70 @@
   .hamburger-icon {
     top: auto !important;
   }
+
+  .Why-luvwish-card {
+    min-height: 200px;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto 20px;
+  }
+
+  .Why-luvwish-card p {
+    margin-bottom: 0px;
+  }
+
+  body .how-its-work-main-tit {
+    margin-bottom: 20px !important;
+    font-size: 30px;
+  }
+
+  body .how-it-works-big-tit {
+    padding-top: 0px !important;
+  }
+
+  .arow-img {
+    display: grid;
+    place-content: center;
+  }
+
+  .arow-img img {
+    height: 250px;
+  }
+
+  .footer-sec {
+    padding: 40px 0px;
+  }
+
+  .product-listing-main-sec-iiner-left-card {
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .product-listing-main-sec-iiner-left-card h3 {
+    font-size: 25px;
+  }
+
+  .Product-Listing-Component-card-img {
+    margin: 0px auto;
+  }
+
+  body .banner-cont-wrap h1 {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 15px !important;
+  }
+
+  body .banner-cont-wrap .primary-btn {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 8px;
+  }
+
+  .Why-luvwish-card-tit{
+    font-size: 20px !important;
+  }
+
+  .Why-luvwish-card p{
+    font-size: 13px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -233,12 +297,12 @@
 
   .about-img {
     display: grid;
-    place-content: center;
+    place-content: end;
     height: 100%;
   }
 
   .about-us-sec-two .row > * {
-    padding: 8px;
+    padding: 0px 8px;
   }
 
   .about-us-sec {
@@ -250,7 +314,11 @@
   }
 
   .about-us-sec-tit-wrap P {
-    font-size:10px;
+    font-size: 10px;
+  }
+
+  .Product-Listing-Component-card-img {
+    margin: 0px auto 10px;
   }
 }
 
@@ -284,5 +352,15 @@
 @media (max-width: 992px) {
   .product-listing-main-sec-iiner-left-card {
     margin-bottom: 30px;
+  }
+
+  .banner-cont-wrap h1 {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 36px !important;
+  }
+
+  .banner-cont-wrap .primary-btn {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 12px;
   }
 }

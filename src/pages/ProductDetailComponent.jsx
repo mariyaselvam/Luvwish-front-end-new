@@ -85,7 +85,7 @@ const ProductDetailComponent = () => {
       <div className="container mt-5 sec-p">
         <div className="row">
           <div className="col-md-6">
-            <img src={product.image} alt={product.name} className="img-fluid" />
+            <img src={product.image} alt={product.name} className="img-fluid project-detail-page" />
           </div>
           <div className="col-md-6">
             <h2 className="pink-tit mb-4 px48">{product.name}</h2>
