@@ -29,7 +29,7 @@ const ProductDetailComponent = () => {
   const handleAddToCart = async () => {
     try {
       setAddingToCart(true);
-      await addToCart(productId, quantity); // You must already have this function
+      await addToCart(productId, quantity);
       navigate("/cart");
     } catch (error) {
       console.error("Failed to add to cart:", error);
@@ -85,7 +85,7 @@ const ProductDetailComponent = () => {
       <div className="container mt-5 sec-p">
         <div className="row">
           <div className="col-md-6">
-            <img src={product.image} alt={product.name} className="img-fluid project-detail-page" />
+          <img src={product.image} alt={product.name} className="img-fluid project-detail-page" />
           </div>
           <div className="col-md-6">
             <h2 className="pink-tit mb-4 px48">{product.name}</h2>
@@ -123,7 +123,6 @@ const ProductDetailComponent = () => {
                       />
                       <span>
                         {item.name}{" "}
-                        <strong className="">X {item.quantity}</strong>
                       </span>
                     </li>
                   ))}

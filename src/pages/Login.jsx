@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { signinUser } from "../api/auth";
@@ -10,6 +10,14 @@ const Login = () => {
   const navigate = useNavigate();
 
 const handleLogin = async (e) => {
+
+    useEffect(() => {
+    if (user) {
+      navigate("/"); // ✅ Redirect if already logged in
+    }
+  }, [user]);
+
+
   e.preventDefault();
 
   try {

@@ -2,19 +2,21 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 
-// Public Pages
-import Home from "./pages/Home";
+// Auth Pages (Public)
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
 import VerifyOtp from "./pages/VerifyOtp";
+
+// Public Policies
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import ShippingAndCancellationPolicy from "./pages/ShippingAndCancellationPolicy";
 import ReturnsAndRefundPolicy from "./pages/ReturnsAndRefundPolicy";
 
-// Protected Pages
+// App Pages (Protected)
+import Home from "./pages/Home";
 import Faq from "./pages/Faq";
 import ContactUs from "./pages/ContactUs";
 import ProductListing from "./pages/ProductListing";
@@ -32,17 +34,16 @@ import Unauthorized from "./components/admin/Unauthorized";
 
 // Protection
 import ProtectedRoute from "./pages/ProtectedRoute";
-
 import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-      <ScrollToTop /> 
+        <ScrollToTop />
         <Routes>
-          {/* ✅ Public Routes */}
-          <Route path="/" element={<Home />} />
+
+          {/* ✅ Public Auth & Info Routes */}
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
@@ -53,81 +54,28 @@ function App() {
           <Route path="/shipping-cancellation" element={<ShippingAndCancellationPolicy />} />
           <Route path="/returns-refundPolicy" element={<ReturnsAndRefundPolicy />} />
 
-          {/* 🔒 Protected Routes */}
+          {/* 🔐 All App Routes Protected */}
           <Route
-            path="/Faq"
+            path="/*"
             element={
               <ProtectedRoute>
-                <Faq />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <ProtectedRoute>
-                <ContactUs />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/products"
-            element={
-              <ProtectedRoute>
-                <ProductListing />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/Period-Calculator"
-            element={
-              <ProtectedRoute>
-                <PeriodCalculator />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/product/:productId"
-            element={
-              <ProtectedRoute>
-                <ProductDetailComponent />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/cart"
-            element={
-              <ProtectedRoute>
-                <CartPage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/checkout"
-            element={
-              <ProtectedRoute>
-                <Checkout />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/coins"
-            element={
-              <ProtectedRoute>
-                <CoinsPage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/logout"
-            element={
-              <ProtectedRoute>
-                <Logout />
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/faq" element={<Faq />} />
+                  <Route path="/contact" element={<ContactUs />} />
+                  <Route path="/products" element={<ProductListing />} />
+                  <Route path="/period-calculator" element={<PeriodCalculator />} />
+                  <Route path="/product/:productId" element={<ProductDetailComponent />} />
+                  <Route path="/cart" element={<CartPage />} />
+                  <Route path="/checkout" element={<Checkout />} />
+                  <Route path="/coins" element={<CoinsPage />} />
+                  <Route path="/logout" element={<Logout />} />
+                </Routes>
               </ProtectedRoute>
             }
           />
 
-          {/* 🔐 Admin Protected Route */}
+          {/* 🔐 Admin Route */}
           <Route
             path="/admin"
             element={
@@ -137,6 +85,7 @@ function App() {
             }
           />
           <Route path="/unauthorized" element={<Unauthorized />} />
+
         </Routes>
       </BrowserRouter>
     </AuthProvider>
